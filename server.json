@@ -1,48 +1,29 @@
 {
-  "name": "io.qr-maker/mcp-server",
-  "description": "Generate styled QR codes, manage dynamic short links with click analytics, and reuse branded style templates via AI agents. Supports batch generation, micro-landing pages, and usage tracking.",
-  "version": "0.1.0",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.QrMakerIO/mcp-server",
+  "description": "Generate styled QR codes, manage dynamic short links with analytics, and publish landing pages.",
   "repository": {
     "url": "https://github.com/qr-maker-io/mcp-server",
     "source": "github"
   },
+  "version": "0.1.1",
   "packages": [
     {
-      "registry": "npm",
+      "registryType": "npm",
       "identifier": "@qr-maker/mcp-server",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },
-      "runtime": {
-        "type": "node",
-        "entrypoint": "dist/index.js"
-      },
-      "installInstructions": "npx @qr-maker/mcp-server --api-key=YOUR_KEY"
+      "environmentVariables": [
+        {
+          "name": "QR_MAKER_API_KEY",
+          "description": "Your QR Maker API key from qr-maker.io/app/settings/api-keys",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
     }
-  ],
-  "capabilities": {
-    "tools": [
-      "generate_qr",
-      "create_link",
-      "list_links",
-      "get_link",
-      "update_link",
-      "delete_link",
-      "get_link_analytics",
-      "list_templates",
-      "create_template",
-      "update_template",
-      "delete_template",
-      "render_template",
-      "publish_landing",
-      "get_landing",
-      "update_landing",
-      "batch_generate",
-      "get_batch_status",
-      "get_usage",
-      "get_capabilities"
-    ]
-  },
-  "tags": ["qr-code", "short-links", "analytics", "marketing", "branding"]
+  ]
 }

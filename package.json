@@ -1,6 +1,6 @@
 {
   "name": "@qr-maker/mcp-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "MCP server for QR Maker — generate styled QR codes, manage dynamic short links with click analytics, and reuse branded templates via AI agents",
   "author": "QR Maker <hello@qr-maker.io>",
@@ -51,5 +51,5 @@
   "engines": {
     "node": ">=18"
   },
-  "mcpName": "io.qr-maker/mcp-server"
+  "mcpName": "io.github.QrMakerIO/mcp-server"
 }
