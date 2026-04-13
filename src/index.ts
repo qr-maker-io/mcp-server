@@ -16,8 +16,7 @@ function parseArgs(argv: string[]): { apiKey: string; baseUrl: string } {
   }
 
   if (!apiKey) {
-    console.error('Error: API key required. Pass --api-key=qk_live_... or set QR_MAKER_API_KEY env var.');
-    process.exit(1);
+    console.error('[qr-maker-mcp] Warning: No API key provided. Tools will be listed but calls will fail. Pass --api-key=qk_live_... or set QR_MAKER_API_KEY.');
   }
 
   return { apiKey, baseUrl };
