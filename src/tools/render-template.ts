@@ -2,7 +2,7 @@ import type { ApiClient } from '../api-client.js';
 
 export const renderTemplateTool = {
   name: 'render_template',
-  description: 'Generate a QR code using a saved style preset. Applies the style settings to the given content. Optionally override specific style properties.',
+  description: `Generate a QR code by applying a saved style preset to new content. Looks up the template by ID, merges any provided overrides on top of the stored style options, then renders the QR code. Returns a public image URL and, for PNG output, an inline base64 image. Use this instead of generate_qr when the user has a saved brand style they want to reuse — avoids re-specifying all style options each time. Use overrides to tweak individual properties (e.g. foreground color) without changing the saved preset.`,
   inputSchema: {
     type: 'object' as const,
     properties: {

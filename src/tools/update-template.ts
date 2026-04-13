@@ -2,7 +2,7 @@ import type { ApiClient } from '../api-client.js';
 
 export const updateTemplateTool = {
   name: 'update_template',
-  description: 'Update a QR code style preset — change name, description, style options, tags, or visibility. Creates a new version automatically.',
+  description: `Update an existing QR code style preset. Accepts partial updates — only the fields you provide are changed; omitted fields keep their current values. The options field, if provided, fully replaces the stored style options. Use this to rename a preset, adjust colors or shapes, change visibility (is_public), or update tags for searchability. Returns the updated template object including its ID, name, options, and timestamps. Call list_templates first if you need to find the template_id.`,
   inputSchema: {
     type: 'object' as const,
     properties: {
