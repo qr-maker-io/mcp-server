@@ -36,6 +36,7 @@ export class ApiClient {
       method,
       headers,
       body: body ? JSON.stringify(body) : undefined,
+      signal: AbortSignal.timeout(10000),
     });
 
     // DELETE returns 204 No Content with no body
