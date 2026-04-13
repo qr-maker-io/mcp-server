@@ -1,5 +1,8 @@
 # @qr-maker/mcp-server
 
+[![Glama score](https://glama.ai/mcp/servers/qr-maker-io/mcp-server/badges/score.svg)](https://glama.ai/mcp/servers/qr-maker-io/mcp-server)
+[![npm](https://img.shields.io/npm/v/@qr-maker/mcp-server)](https://www.npmjs.com/package/@qr-maker/mcp-server)
+
 MCP (Model Context Protocol) server for [QR Maker](https://qr-maker.io) — generate styled QR codes, manage dynamic short links with click analytics, and publish micro-landing pages from any AI assistant.
 
 ## Quick Start
