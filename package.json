@@ -1,0 +1,55 @@
+{
+  "name": "@qr-maker/mcp-server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server for QR Maker — generate styled QR codes, manage dynamic short links with click analytics, and reuse branded templates via AI agents",
+  "author": "QR Maker <hello@qr-maker.io>",
+  "homepage": "https://qr-maker.io/docs/agents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qr-maker-io/mcp-server"
+  },
+  "bugs": {
+    "url": "https://github.com/qr-maker-io/mcp-server/issues"
+  },
+  "bin": {
+    "qr-maker-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "qr-code",
+    "qr-generator",
+    "ai-agent",
+    "short-links",
+    "dynamic-qr",
+    "claude",
+    "cursor",
+    "windsurf",
+    "anthropic"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "mcpName": "io.qr-maker/mcp-server"
+}

@@ -1,0 +1,48 @@
+{
+  "name": "io.qr-maker/mcp-server",
+  "description": "Generate styled QR codes, manage dynamic short links with click analytics, and reuse branded style templates via AI agents. Supports batch generation, micro-landing pages, and usage tracking.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/qr-maker-io/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registry": "npm",
+      "identifier": "@qr-maker/mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "runtime": {
+        "type": "node",
+        "entrypoint": "dist/index.js"
+      },
+      "installInstructions": "npx @qr-maker/mcp-server --api-key=YOUR_KEY"
+    }
+  ],
+  "capabilities": {
+    "tools": [
+      "generate_qr",
+      "create_link",
+      "list_links",
+      "get_link",
+      "update_link",
+      "delete_link",
+      "get_link_analytics",
+      "list_templates",
+      "create_template",
+      "update_template",
+      "delete_template",
+      "render_template",
+      "publish_landing",
+      "get_landing",
+      "update_landing",
+      "batch_generate",
+      "get_batch_status",
+      "get_usage",
+      "get_capabilities"
+    ]
+  },
+  "tags": ["qr-code", "short-links", "analytics", "marketing", "branding"]
+}
